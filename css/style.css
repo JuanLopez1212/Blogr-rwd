@@ -1,3 +1,10 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -5,6 +12,18 @@ html {
 body {
     background-color: pink;
     font-size: 1.4rem;
+}
+
+.main-container {
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+    max-height: 100vh;
+    height: 100vh;
 }
 
 .container {
@@ -52,3 +71,4 @@ body {
         padding: 0 4rem;
     }
 }
+
