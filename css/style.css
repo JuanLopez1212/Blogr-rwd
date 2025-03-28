@@ -7,11 +7,48 @@ body {
     font-size: 1.4rem;
 }
 
-/* Media Queries */
-
 .container {
     border: 2px dotted blue;
     max-width: 96vw;
     margin: 0 auto;
     box-sizing: border-box;
+    padding: 0 .8rem;
+}
+
+.container-fluid {
+    border: 2px dotted orange;
+    max-width: 100vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Media Queries */
+
+@media ( min-width: 56.7rem ) {
+    .container {
+        max-width: 56rem;
+        padding: 0 1.6rem;
+    }
+}
+
+@media ( min-width: 76.8rem ) {
+    .container {
+        max-width: 72rem;
+        padding: 0 2.4rem;
+    }
+}
+
+@media ( min-width: 99.2rem ) {
+    .container {
+        max-width: 98rem;
+        padding: 0 3.2rem;
+    }
+}
+
+@media ( min-width: 120rem ) {
+    .container {
+        max-width: 114rem;
+        padding: 0 4rem;
+    }
 }
