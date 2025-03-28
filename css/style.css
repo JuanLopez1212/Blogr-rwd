@@ -3,5 +3,15 @@ html {
 }
 
 body {
+    background-color: pink;
     font-size: 1.4rem;
+}
+
+/* Media Queries */
+
+.container {
+    border: 2px dotted blue;
+    max-width: 96vw;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
