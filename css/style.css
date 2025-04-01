@@ -1,3 +1,12 @@
+:root {
+    /* Colors */
+    --sunset-orange: #ff535b;
+    --Jacarta: #3a3d5c;
+    --Dark-Gunmetal: #24242c;
+    /* Fonts */
+    --overall-fontsize: 62.5%;
+}
+
 html,
 body {
     height: 100%;
@@ -6,11 +15,10 @@ body {
 }
 
 html {
-    font-size: 62.5%;
+    font-size: var(--overall-fontsize);
 }
 
 body {
-    background-color: pink;
     font-size: 1.4rem;
 }
 
@@ -20,11 +28,33 @@ body {
     flex-direction: column;
 }
 
+/* Header */
+.header {
+    background-color: var(--sunset-orange);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-right {
+    display: none;
+}
+
+/* Main */
 .main {
     flex-grow: 1;
     max-height: 100vh;
     height: 100vh;
 }
+
+/* Footer */
+.footer {
+    background-color: var(--Dark-Gunmetal);
+}
+
 
 .container {
     border: 2px dotted blue;
@@ -44,28 +74,31 @@ body {
 
 /* Media Queries */
 
-@media ( min-width: 56.7rem ) {
+@media ( min-width: 567px) {
     .container {
         max-width: 56rem;
         padding: 0 1.6rem;
     }
 }
 
-@media ( min-width: 76.8rem ) {
+@media ( min-width: 768px ) {
     .container {
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+    .navbar-right {
+        display: block;
+    }
 }
 
-@media ( min-width: 99.2rem ) {
+@media ( min-width: 992px ) {
     .container {
         max-width: 98rem;
         padding: 0 3.2rem;
     }
 }
 
-@media ( min-width: 120rem ) {
+@media ( min-width: 1200px ) {
     .container {
         max-width: 114rem;
         padding: 0 4rem;
