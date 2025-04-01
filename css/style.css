@@ -39,8 +39,40 @@ body {
     align-items: center;
 }
 
+.navbar-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
 .navbar-right {
     display: none;
+}
+
+.menu-main {
+    display: none;
+}
+
+.menu-authentication {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+.menu-authentication .item-3 {
+    display: none;
+}
+
+.btn {
+    border: 1px solid yellow;
+    padding: .6rem 1.2rem;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* Main */
@@ -88,6 +120,17 @@ body {
     }
     .navbar-right {
         display: block;
+    }
+    .menu-main {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+    .icon-hamburguer {
+        display: none;
     }
 }
 
