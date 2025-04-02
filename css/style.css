@@ -114,6 +114,26 @@ body {
     height: 100vh;
 }
 
+/* Main: Section Call To Action */
+.section-call-to-action {
+    background: var(--sunset-orange);
+    display: flex;
+    height: 44rem;
+    border-radius: 0 0 0 12rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+    margin: 4rem 0;
+}
+
 /* Footer */
 .footer {
     background-color: var(--Dark-Gunmetal);
