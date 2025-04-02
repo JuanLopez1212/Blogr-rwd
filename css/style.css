@@ -20,6 +20,7 @@ html {
 
 body {
     font-size: 1.4rem;
+    font-family: "Inter",sans-serif; 
 }
 
 .main-container {
@@ -37,6 +38,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 8rem;
+    height: 8rem;
+}
+
+.site-logo {
+    text-decoration: none;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
 .navbar-center {
@@ -44,6 +54,11 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+}
+
+.icon-hamburguer {
+    font-size: 2.4rem;
+    color: white;
 }
 
 .navbar-right {
@@ -63,6 +78,7 @@ body {
     padding: 0;
 }
 
+
 .menu-authentication .item-3 {
     display: none;
 }
@@ -73,6 +89,22 @@ body {
     border-radius: 1.5rem;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+.btn.primary {
+    background: white;
+    border: 1px solid white;
+    color: var(--sunset-orange);
+}
+
+.btn.outline-primary {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid transparent;
+    color: white;
 }
 
 /* Main */
@@ -89,7 +121,7 @@ body {
 
 
 .container {
-    border: 2px dotted blue;
+    /* border: 2px dotted blue; */
     max-width: 96vw;
     margin: 0 auto;
     box-sizing: border-box;
@@ -97,7 +129,7 @@ body {
 }
 
 .container-fluid {
-    border: 2px dotted orange;
+    /* border: 2px dotted orange; */
     max-width: 100vw;
     margin: 0 auto;
     box-sizing: border-box;
@@ -118,8 +150,15 @@ body {
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+    .navbar.left {
+        flex-basis: 14rem;
+    }
+    .navbar-center {
+        flex-grow: 1;
+    }
     .navbar-right {
         display: block;
+        flex-basis: 15rem;
     }
     .menu-main {
         list-style: none;
