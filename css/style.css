@@ -21,6 +21,7 @@ html {
 body {
     font-size: 1.4rem;
     font-family: "Inter",sans-serif; 
+    text-align: center;
 }
 
 .main-container {
@@ -94,7 +95,7 @@ body {
 .btn.primary {
     background: white;
     border: 1px solid white;
-    color: var(--sunset-orange);
+    color: var(--sunset-orange)
 }
 
 .btn.outline-primary {
@@ -110,8 +111,6 @@ body {
 /* Main */
 .main {
     flex-grow: 1;
-    max-height: 100vh;
-    height: 100vh;
 }
 
 /* Main: Section Call To Action */
@@ -132,6 +131,40 @@ body {
     align-items: center;
     gap: 1.4rem;
     margin: 4rem 0;
+}
+
+/* Main: Section Designed for the Future */
+.content-designed-for-the-future {
+    margin: 9rem 0;
+}
+
+.img-designed-for-the-future {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 8rem;
+}
+
+.content-designed-for-the-future p {
+    text-align: left;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+}
+
+.section-2 {
+    width: 84%;
+    margin: 0 auto;
+}
+
+@media ( min-width: 567px ) {}
+
+@media ( min-width: 768px ) {
+    .content-designed-for-the-future {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
 }
 
 /* Footer */
@@ -170,6 +203,7 @@ body {
         max-width: 72rem;
         padding: 0 2.4rem;
     }
+    /* Header */
     .navbar.left {
         flex-basis: 14rem;
     }
@@ -190,6 +224,11 @@ body {
     }
     .icon-hamburguer {
         display: none;
+    }
+    /* Main: Section Designed for the future */
+    .section-1,
+    .section-2 {
+        flex: 1;
     }
 }
 

@@ -36,10 +36,10 @@
                     <nav class="navbar-right">
                         <ul class="menu-authentication">
                             <li class="menu-item item item-1">
-                                <a class="menu-link link link-1 btn outline-primary" href="#">Log In</a>
+                                <a class="menu-link link link-1 btn btn-outline-primary" href="#">Log In</a>
                             </li>
                             <li class="menu-item item item-2">
-                                <a class="menu-link link link-2 btn primary" href="#">Sign In</a>
+                                <a class="menu-link link link-2 btn btn-primary" href="#">Sign In</a>
                             </li>
                             <li class="menu-item item item-3">
                                 <a class="menu-link link link-3 btn" href="#">Sign Out</a>
@@ -64,17 +64,26 @@
             </section>
             <section class="section-designed-for-the-future section">
                 <div class="container">
+                    <h2>Designed for the future</h2>
                     <div class="content-designed-for-the-future">
-                        <h2>Designed for the future</h2>
                         <div class="section-1">
+                            <!-- Forma de colocar imágenes autoajustables de diferentes fuentes (varias imágenes) -->
+                            <picture>
+                                <source media="(max-width: 567px)" srcset="./img/illustration-editor-mobile.svg" />
+                                <source media="(min-width: 768px)" srcset="./img/illustration-editor-desktop.svg" />
+
+                                <img class="img img-designed-for-the-future" src="./img/illustration-editor-mobile.svg" alt="Image: Ilustration Editor Desktop"/>
+                            </picture>
+
+                            <!-- Forma convencional de agregar imágenes -->
+                            <!-- <img class="img img-designed-for-the-future" src="./img/illustration-editor-mobile.svg" alt=""> -->
+                        </div>
+                        <div class="section-2">
                             <h3>Introducing an extensible editor</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nulla eius quam totam? Possimus ipsa ex blanditiis dignissimos nesciunt quidem doloremque dolores sit saepe temporibus.</p>
 
                             <h3>Robust content management</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iusto maiores nulla asperiores aspernatur eligendi quo blanditiis quibusdam, magni facere.</p>
-                        </div>
-                        <div class="section-2">
-                            imagen
                         </div>
                     </div>
                 </div>
