@@ -95,7 +95,7 @@ body {
 .btn.primary {
     background: white;
     border: 1px solid white;
-    color: var(--sunset-orange)
+    color: var(--sunset-orange);
 }
 
 .btn.outline-primary {
@@ -155,6 +155,22 @@ body {
     margin: 0 auto;
 }
 
+/* Main: Section State of the Art Infrastructure */
+
+.second-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    color: white;
+    background: var(--Jacarta);
+    padding: 7px 0;
+    text-align: left;
+    border-radius: 0 3.5rem
+}
+
+
+
 @media ( min-width: 567px ) {}
 
 @media ( min-width: 768px ) {
@@ -165,6 +181,44 @@ body {
         justify-content: center;
         flex-direction: row-reverse;
     }
+}
+
+/** Main: State of the art */
+.section-state-of-the-art.section {
+    margin: 24rem 0 0;
+    color: white;
+}
+.bg-jacarta {
+    background: var(--Jacarta);
+    height: 60rem;
+    border-radius: 0 12rem;
+}
+
+.content-state-of-the-art .section-1 {
+    display: flex;
+    position: relative;
+    top: -18rem;
+}
+
+.img-state-of-art {
+    width: 100%;
+    max-width: 100%;
+}
+
+.content-state-of-the-art .section-2 {
+    position: relative;
+    top: -16rem;
+}
+
+.content-state-of-the-art h2 {
+    font-size: 3.7rem;
+    font-weight: normal;
+}
+
+.content-state-of-the-art p {
+    text-align: left;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
 }
 
 /* Footer */
@@ -228,6 +282,10 @@ body {
     /* Main: Section Designed for the future */
     .section-1,
     .section-2 {
+        flex: 1;
+    }
+    .box-new-1,
+    .box-new-2 {
         flex: 1;
     }
 }
