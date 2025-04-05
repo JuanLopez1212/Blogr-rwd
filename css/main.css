@@ -209,6 +209,30 @@ body {
     font-size: 1.2rem;
 }
 
+/** Main: Section Free, open, simple */
+.content-free-open-simple {
+    margin: 9rem 0;
+}
+
+.img-free-open-simple {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8rem;
+}
+
+.content-free-open-simple p {
+    /* color: blue; */
+    text-align: left;
+    line-height: 1.9rem;
+    font-size: 1.2rem;
+}
+
+.section-2 {
+    /* border: 1px solid; */
+    width: 84%;
+    margin: 0 auto;
+}
+
 
 /** Footer */
 .footer {
@@ -222,6 +246,7 @@ body {
     box-sizing: border-box;
     padding: 0 .8rem;
 }
+
 .container-fluid {
     /* border: 2px dotted orange; */
     max-width: 100vw;
@@ -270,6 +295,7 @@ body {
     .icon-hamburguer {
         display: none;
     }    
+
     /** Main: Section Designed for the Future */
     .section-designed-for-the-future .section-1,
     .section-designed-for-the-future .section-2 {
@@ -284,6 +310,7 @@ body {
         height: 30rem;
         margin: 9rem 0 6rem 0;
     }
+
     /** Main: Section State of the art  */
     .section-state-of-the-art {
         margin: 12rem 0;
@@ -328,6 +355,20 @@ body {
 
     .content-state-of-the-art .section-2-content {
         margin-right: 10rem;
+    }
+    /** Main: Section Free, open, simple */
+    .section-free-open-simple .section-1,
+    .section-free-open-simple .section-2 {
+        flex: 1;
+    }
+    .content-free-open-simple {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 30rem;
+        margin: 9rem 0 6rem 0;
     }
 
 }
